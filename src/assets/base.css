@@ -7,7 +7,7 @@
 :root{
   font-size: 16px;
   --Nav-Background: #192a56;
-  --Nav-Font: calc(0.5rem + 1.4vw);
+  --Nav-Font: calc(0.3rem + 1.4vw);
   --Color-Primary: #7f8fa6;
   --Color-Secondary: #f5f6fa;
   --Color-Tertiary: #f5f6fa;
