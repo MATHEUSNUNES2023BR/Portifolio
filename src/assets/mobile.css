@@ -1,0 +1,18 @@
+@media screen and (max-width: 576px){
+    :root{
+        --Nav-Font: calc(1rem + 1.4vw);
+    }
+    #Nav button{
+        background-color: var(--Color-Tertiary);
+    }
+    #navbarNav{
+        height: auto;
+    }
+    #navbarNav ul{
+        width: 100%;
+        margin-top: 4vw;
+    }
+    #navbarNav .nav-link{
+        margin: 3vw;
+    }
+}

@@ -1,5 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+:root{
+  font-size: 16px;
+  --Nav-Background: #192a56;
+  --Nav-Font: calc(0.5rem + 1.4vw);
+  --Color-Primary: #7f8fa6;
+  --Color-Secondary: #f5f6fa;
+  --Color-Tertiary: #f5f6fa;
+  --Box-Shadow-Color: #0097e6;
+}
+/* Background está como important porque parece que alguma conf bootstrap sobre põe */
+body{
+  background-color: #2f3640 !important;
+}
+#navbarNav{
+  height: 10vh;
 }
