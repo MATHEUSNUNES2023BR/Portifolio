@@ -1,5 +1,20 @@
 @media screen and (min-width: 992px){
     #navbarNav ul{
         width: 50%;
+     }
+    .Minha-Foto{
+      width:var(--Foto-Width);
+    }
+    .Frase-e-icones h2{
+      font-size: var(--Frase-Font);
+      color: var(--Color-Secondary);
+      margin-top: 0.5vw;
+    }
+    .Frase-e-icones ul{
+      list-style: none;
+      width: 80%;  
+    }
+    .Frase-e-icones ul li img{
+      width: var(--Icones-Witdh);
     }
 }

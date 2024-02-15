@@ -10,8 +10,10 @@
   --Nav-Font: calc(0.3rem + 1.4vw);
   --Color-Primary: #7f8fa6;
   --Color-Secondary: #f5f6fa;
-  --Color-Tertiary: #f5f6fa;
   --Box-Shadow-Color: #0097e6;
+  --Foto-Width: 80%;
+  --Frase-Font: calc(0.3rem + 5vw);
+  --Icones-Witdh: 4.5vw
 }
 /* Background está como important porque parece que alguma conf bootstrap sobre põe */
 body{

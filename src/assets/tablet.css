@@ -2,7 +2,8 @@
     :root{
         --Nav-Font: calc(1rem + 1.5vw);
     }
-    #navbarNav ul{
+    #navbarNav ul {
         width: 100%;
     }
+    
 }
