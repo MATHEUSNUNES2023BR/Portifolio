@@ -8,11 +8,20 @@
     .Frase-e-icones h2{
       font-size: var(--Frase-Font);
       color: var(--Color-Secondary);
+      font-family: "Roboto", sans-serif;
+      text-transform: uppercase;
       margin-top: 0.5vw;
     }
+    .Frase-e-icones--txt1{
+      margin: 1vw auto;
+      width: 16.73ch;
+    }
+    .Frase-e-icones--txt2{
+        margin: 0 auto;
+        width: 19ch;
+    }
     .Frase-e-icones ul{
-      list-style: none;
-      width: 100%;  
+      width: 80% !important;
     }
     .Frase-e-icones ul li img{
       width: var(--Icones-Witdh);

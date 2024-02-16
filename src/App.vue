@@ -34,22 +34,22 @@
 
   <main id="Main" class="container-fluid">
     <div class="row mt-4">
-      <div class="col-sm-5 col-12 d-flex justify-content-center">
+      <div class="col-lg-5 col-12 d-flex justify-content-center">
         <img class="Minha-Foto rounded-circle" src="./assets/midia/minha-foto.jpg" alt="">
       </div>
-      <div class="Frase-e-icones col mt-sm-5">
-        <h2>Olá sou Matheus,</h2>
-        <h2>Desenvolvedor Web</h2>
-        <ul class="d-flex flex-column flex-sm-row mt-sm-5 mx-auto">
-          <li class="col-1"> <img src="./assets/midia/icons/html-5-svgrepo-com.svg" alt=""> </li>
-          <li class="col-1"> <img src="./assets/midia/icons/css-3-svgrepo-com.svg" alt=""> </li>
-          <li class="col-1"> <img src="./assets/midia/icons/js-svgrepo-com.svg" alt=""> </li>
-          <li class="col-1"> <img src="./assets/midia/icons/node-js-svgrepo-com.svg" alt=""> </li>
-          <li class="col-1"> <img src="./assets/midia/icons/bootstrap-4-logo-svgrepo-com.svg" alt=""> </li>
-          <li class="col-1"> <img src="./assets/midia/icons/vue-svgrepo-com.svg" alt=""> </li>
-          <li class="col-1"> <img src="./assets/midia/icons/sass-svgrepo-com.svg" alt=""> </li>
-          <li class="col-1"> <img src="./assets/midia/icons/jquery-svgrepo-com.svg" alt=""> </li>
-          <li class="col-1"> <img src="./assets/midia/icons/python-svgrepo-com.svg" alt=""> </li>
+      <div class="Frase-e-icones col-lg-6 col mt-sm-5">
+        <h2 class="Frase-e-icones--txt1">Olá sou Matheus,</h2>
+        <h2 class="Frase-e-icones--txt2">Desenvolvedor Web</h2>
+        <ul class="row gap-lg-3 mt-sm-4 row-gap-4 mt-2 mt-sm-5 justify-content-center">
+          <li class="col-lg-2 col-sm-3 col-4 justify-content-center d-flex"> <img src="./assets/midia/icons/html-5-svgrepo-com.svg" alt=""> </li>
+          <li class="col-lg-2 col-sm-3 col-4 justify-content-center d-flex"> <img src="./assets/midia/icons/css-3-svgrepo-com.svg" alt=""> </li>
+          <li class="col-lg-2 col-sm-3 col-4 justify-content-center d-flex"> <img src="./assets/midia/icons/js-svgrepo-com.svg" alt=""> </li>
+          <li class="col-lg-2 col-sm-3 col-4 justify-content-center d-flex"> <img src="./assets/midia/icons/node-js-svgrepo-com.svg" alt=""> </li>
+          <li class="col-lg-2 col-sm-3 col-4 justify-content-center d-flex"> <img src="./assets/midia/icons/bootstrap-4-logo-svgrepo-com.svg" alt=""> </li>
+          <li class="col-lg-2 col-sm-3 col-4 justify-content-center d-flex"> <img src="./assets/midia/icons/vue-svgrepo-com.svg" alt=""> </li>
+          <li class="col-lg-2 col-sm-3 col-4 justify-content-center d-flex"> <img src="./assets/midia/icons/sass-svgrepo-com.svg" alt=""> </li>
+          <li class="col-lg-2 col-sm-3 col-4 justify-content-center d-flex"> <img src="./assets/midia/icons/jquery-svgrepo-com.svg" alt=""> </li>
+          <li class="col-lg-2 col-sm-3 col-4 justify-content-center d-flex"> <img src="./assets/midia/icons/python-svgrepo-com.svg" alt=""> </li>
         </ul>
       </div>
     </div>
@@ -72,14 +72,16 @@
       transition: 0.3s ease; 
     }
   }
-  .Frase-e-icones ul li img{
-      animation:  5s 3 linear;
-  }
 
+  .Frase-e-icones ul li img{
+      animation: rotateHorizontal 5s infinite linear;
+  }
   .Frase-e-icones ul{
       list-style: none;
+      padding-right: 32px;
+      width: 100%; 
+      margin: 0 auto;
   }
-
   @keyframes rotateHorizontal {
     0% {
       transform: rotateY(0deg);

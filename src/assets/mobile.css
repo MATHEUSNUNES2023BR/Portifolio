@@ -1,14 +1,15 @@
-@media screen and (max-width: 576px){
+@media screen and (max-width: 575px){
     :root{
         --Nav-Font: calc(1rem + 1.4vw);
-        --Frase-Font: calc(1rem + 7vw);
-        --Icones-Witdh: 12vw;
+        --Frase-Font: calc(1.2rem + 4vw);
+        --Icones-Witdh: 15vw;
+        --Foto-Width: 70%;
     }
     #navbarNav{
         height: auto; 
     }
     #Nav button{
-        background-color: var( --Color-Secondary);
+        background-color: var(--Color-Secondary);
     }
     #navbarNav ul{
         width: 100%;
@@ -19,15 +20,22 @@
     }
     .Minha-Foto{
         width:var(--Foto-Width);
+        margin-top: 5vw;
     }
     .Frase-e-icones h2{
         font-size: var(--Frase-Font);
+        color: var(--Color-Secondary);
+        text-transform: uppercase;
     }
-    .Frase-e-icones ul{
-        width: 80%;
+    .Frase-e-icones--txt1{
+        margin: 3vw auto; 
+        width: 16.73ch;
+    }
+    .Frase-e-icones--txt2{
         margin: 0 auto;
+        width: 19ch;
     }
-  
+   
     .Frase-e-icones ul li img{
         width: var(--Icones-Witdh);
     }

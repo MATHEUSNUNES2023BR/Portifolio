@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 *{
   margin: 0;
   padding: 0;
@@ -12,7 +14,7 @@
   --Color-Secondary: #f5f6fa;
   --Box-Shadow-Color: #0097e6;
   --Foto-Width: 80%;
-  --Frase-Font: calc(0.3rem + 5vw);
+  --Frase-Font: calc(0.3rem + 4.2vw);
   --Icones-Witdh: 4.2vw
 }
 /* Background está como important porque parece que alguma conf bootstrap sobre põe */

@@ -1,9 +1,32 @@
-@media screen and (min-width: 576px) and (max-width: 992px){
+@media screen and (min-width: 576px) and (max-width: 991px){
     :root{
         --Nav-Font: calc(1rem + 1.5vw);
+        --Foto-Width: 60%;
+        --Frase-Font: calc(1rem + 6.5vw);
+        --Icones-Witdh: 12vw
     }
     #navbarNav ul {
         width: 100%;
     }
-    
+    .Minha-Foto{
+        width:var(--Foto-Width);
+        margin-top: 5vw;
+    }
+    .Frase-e-icones h2{
+        font-size: var(--Frase-Font);
+        color: var(--Color-Secondary);
+        text-transform: uppercase;
+    }
+    .Frase-e-icones--txt1{
+        margin: 2vw auto;
+        width: 16.73ch;
+    }
+    .Frase-e-icones--txt2{
+        margin: 0 auto;
+        width: 19ch;
+    }
+   
+    .Frase-e-icones ul li img{
+        width: var(--Icones-Witdh);
+    }
 }
