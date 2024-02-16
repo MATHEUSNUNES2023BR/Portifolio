@@ -13,7 +13,7 @@
   --Box-Shadow-Color: #0097e6;
   --Foto-Width: 80%;
   --Frase-Font: calc(0.3rem + 5vw);
-  --Icones-Witdh: 4.5vw
+  --Icones-Witdh: 4.2vw
 }
 /* Background está como important porque parece que alguma conf bootstrap sobre põe */
 body{

@@ -40,15 +40,16 @@
       <div class="Frase-e-icones col mt-sm-5">
         <h2>Olá sou Matheus,</h2>
         <h2>Desenvolvedor Web</h2>
-        <ul class="justify-content-between d-flex mt-sm-5">
-          <li> <img src="./assets/midia/icons/html-5-svgrepo-com.svg" alt=""> </li>
-          <li> <img src="./assets/midia/icons/css-3-svgrepo-com.svg" alt=""> </li>
-          <li> <img src="./assets/midia/icons/js-svgrepo-com.svg" alt=""> </li>
-          <li> <img src="./assets/midia/icons/node-js-svgrepo-com.svg" alt=""> </li>
-          <li> <img src="./assets/midia/icons/bootstrap-4-logo-svgrepo-com.svg" alt=""> </li>
-          <li> <img src="./assets/midia/icons/vue-svgrepo-com.svg" alt=""> </li>
-          <li> <img src="./assets/midia/icons/sass-svgrepo-com.svg" alt=""> </li>
-          <li> <img src="./assets/midia/icons/grunt-svgrepo-com.svg" alt=""> </li>
+        <ul class="d-flex flex-column flex-sm-row mt-sm-5 mx-auto">
+          <li class="col-1"> <img src="./assets/midia/icons/html-5-svgrepo-com.svg" alt=""> </li>
+          <li class="col-1"> <img src="./assets/midia/icons/css-3-svgrepo-com.svg" alt=""> </li>
+          <li class="col-1"> <img src="./assets/midia/icons/js-svgrepo-com.svg" alt=""> </li>
+          <li class="col-1"> <img src="./assets/midia/icons/node-js-svgrepo-com.svg" alt=""> </li>
+          <li class="col-1"> <img src="./assets/midia/icons/bootstrap-4-logo-svgrepo-com.svg" alt=""> </li>
+          <li class="col-1"> <img src="./assets/midia/icons/vue-svgrepo-com.svg" alt=""> </li>
+          <li class="col-1"> <img src="./assets/midia/icons/sass-svgrepo-com.svg" alt=""> </li>
+          <li class="col-1"> <img src="./assets/midia/icons/jquery-svgrepo-com.svg" alt=""> </li>
+          <li class="col-1"> <img src="./assets/midia/icons/python-svgrepo-com.svg" alt=""> </li>
         </ul>
       </div>
     </div>
@@ -72,7 +73,7 @@
     }
   }
   .Frase-e-icones ul li img{
-      animation: rotateHorizontal 5s infinite linear;
+      animation:  5s 3 linear;
   }
 
   .Frase-e-icones ul{

@@ -2,7 +2,7 @@
     :root{
         --Nav-Font: calc(1rem + 1.4vw);
         --Frase-Font: calc(1rem + 7vw);
-        --Icones-Witdh: 13vw;
+        --Icones-Witdh: 12vw;
     }
     #navbarNav{
         height: auto; 
@@ -20,17 +20,14 @@
     .Minha-Foto{
         width:var(--Foto-Width);
     }
-    .Frase-e-icones{
-        position: relative;
-    }
     .Frase-e-icones h2{
         font-size: var(--Frase-Font);
     }
     .Frase-e-icones ul{
-        width: 100%;
-        left: -10vw;
-        position: absolute;
+        width: 80%;
+        margin: 0 auto;
     }
+  
     .Frase-e-icones ul li img{
         width: var(--Icones-Witdh);
     }
