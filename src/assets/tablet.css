@@ -14,6 +14,7 @@
     }
     .Frase-e-icones h2{
         font-size: var(--Frase-Font);
+        height: 10vw;
         color: var(--Color-Secondary);
         text-transform: uppercase;
     }

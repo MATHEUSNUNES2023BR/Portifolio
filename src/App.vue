@@ -12,23 +12,34 @@
     texto1: '',
     texto2: ''
    })
-   async function TypeWriter(text, e=0){
-    let i = 0;
-    const Interval = await setInterval(()=>{
-        if(i <= text.length){
-          if(e == 1){
-            estado.texto2 +=  text.charAt(i)
-          }else{
-            estado.texto1 += text.charAt(i)
+
+   function TypeWriter(text, e) {
+    return new Promise(resolve => {
+      let i = 0;
+      const Interval = setInterval(() => {
+        if (i <= text.length) {
+          if (e == 1) {
+            estado.texto2 += text.charAt(i);
+          } else {
+            estado.texto1 += text.charAt(i);
           }
-          i++
-          requestAnimationFrame(TypeWriter)
-        }else{
-          clearInterval(Interval)
+          i++;
+        } else {
+          clearInterval(Interval);
+          resolve(); // Resolve a Promise após a conclusão do TypeWriter
         }
-      }, 140)
-    }
-  TypeWriter(txt1)
+      }, 125);
+    });
+  }
+
+  async function iniciarTypeWriter() {
+    await TypeWriter(txt1, 0);
+    await TypeWriter(txt2, 1);
+  }
+  // Inicia o processo apos carregamento da paginar
+  window.addEventListener('DOMContentLoaded', ()=>{
+    iniciarTypeWriter();
+  })
 </script>
 
 <template>
