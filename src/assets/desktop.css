@@ -7,6 +7,7 @@
     }
     .Frase-e-icones h2{
       font-size: var(--Frase-Font);
+      height: 10vh;
       color: var(--Color-Secondary);
       font-family: "Roboto", sans-serif;
       text-transform: uppercase;

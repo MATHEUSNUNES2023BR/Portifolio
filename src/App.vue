@@ -5,6 +5,30 @@
    import './assets/desktop.css' 
    import 'bootstrap/dist/css/bootstrap.min.css' //Importando CSS Bootstrap
    import 'bootstrap/dist/js/bootstrap.bundle.min.js' //Importando JS Bootstrap
+   import { reactive } from 'vue';
+   const txt1 = 'Olá sou Matheus,'
+   const txt2 = 'Desenvolvedor Web'
+   const estado = reactive({
+    texto1: '',
+    texto2: ''
+   })
+   async function TypeWriter(text, e=0){
+    let i = 0;
+    const Interval = await setInterval(()=>{
+        if(i <= text.length){
+          if(e == 1){
+            estado.texto2 +=  text.charAt(i)
+          }else{
+            estado.texto1 += text.charAt(i)
+          }
+          i++
+          requestAnimationFrame(TypeWriter)
+        }else{
+          clearInterval(Interval)
+        }
+      }, 140)
+    }
+  TypeWriter(txt1)
 </script>
 
 <template>
@@ -38,8 +62,8 @@
         <img class="Minha-Foto rounded-circle" src="./assets/midia/minha-foto.jpg" alt="">
       </div>
       <div class="Frase-e-icones col-lg-6 col mt-sm-5">
-        <h2 class="Frase-e-icones--txt1">Olá sou Matheus,</h2>
-        <h2 class="Frase-e-icones--txt2">Desenvolvedor Web</h2>
+        <h2 class="Frase-e-icones--txt1">{{ estado.texto1 }}</h2>
+        <h2 class="Frase-e-icones--txt2">{{ estado.texto2 }}</h2>
         <ul class="row gap-lg-3 mt-sm-4 row-gap-4 mt-2 mt-sm-5 justify-content-center">
           <li class="col-lg-2 col-sm-3 col-4 justify-content-center d-flex"> <img src="./assets/midia/icons/html-5-svgrepo-com.svg" alt=""> </li>
           <li class="col-lg-2 col-sm-3 col-4 justify-content-center d-flex"> <img src="./assets/midia/icons/css-3-svgrepo-com.svg" alt=""> </li>
